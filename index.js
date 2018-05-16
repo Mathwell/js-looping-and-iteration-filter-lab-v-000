@@ -7,3 +7,8 @@ function findMatching(drivers, name){
   return newDrivers
 }
 
+function fuzzyMatch(drivers, letter){
+  newDrivers=[]
+  newDrivers=drivers.filter(function(element){return element.contains(letter)})
+  return newDrivers
+}
