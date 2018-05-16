@@ -12,3 +12,9 @@ function fuzzyMatch(drivers, letters){
   newDrivers=drivers.filter(function(element){return element.slice(0,letters.length)===letters})
   return newDrivers
 }
+
+function matchName(drivers,string){
+  newDrivers=[]
+  newDrivers=drivers.filter(function(element){return element.name===string})
+  return newDrivers
+}
