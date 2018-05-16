@@ -9,6 +9,6 @@ function findMatching(drivers, name){
 
 function fuzzyMatch(drivers, letters){
   newDrivers=[]
-  newDrivers=drivers.filter(function(element){return element.slice(0,letters.length)=letters})
+  newDrivers=drivers.filter(function(element){return element.slice(0,letters.length)===letters})
   return newDrivers
 }
